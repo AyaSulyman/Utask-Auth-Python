@@ -10,6 +10,7 @@ export interface AuthLayoutProps {
   sub: string;
 }
 
+// Managing Authentication Layout
 export default function AuthLayout({ children, headline, sub }: AuthLayoutProps) {
   const { theme, toggleTheme } = useTheme();
   return (
