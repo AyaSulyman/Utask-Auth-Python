@@ -228,7 +228,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
         </div>
       </aside>
 
-      {/* Main content */}
+     {/* Main content */}
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0 }}>
         <header
           style={{
