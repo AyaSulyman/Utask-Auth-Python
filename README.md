@@ -21,7 +21,7 @@ You need both servers running at the same time, in two terminals.
 ```bash
 cd backend
 cp .env.example .env
-# edit .env — set DATABASE_URL to your Postgres instance and a real JWT_SECRET_KEY
+
 
 python -m venv venv
 source venv/bin/activate       =

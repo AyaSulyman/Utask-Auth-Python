@@ -5,14 +5,14 @@ def _get_token(client, email="john@example.com", password="Password123"):
     register_user(client, email=email, password=password)
     return login(client, email, password).json()["access_token"]
 
-
+# Test get users
 def test_get_own_profile(client):
     token = _get_token(client)
     resp = client.get("/users/me", headers=auth_headers(token))
     assert resp.status_code == 200
     assert resp.json()["type"] == "client"
 
-
+# Test update user profile
 def test_update_own_profile(client):
     token = _get_token(client)
     resp = client.put(
